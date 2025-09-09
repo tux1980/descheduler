@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/tux1980/descheduler.git
     targetRevision: HEAD
-    path: /
+    path: operator/
   syncPolicy:
     automated:
       prune: true
