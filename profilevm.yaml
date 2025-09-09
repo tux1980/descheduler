@@ -13,4 +13,4 @@ spec:
   # You may need to adjust the label selector based on your environment.
   nodeSelector:
     matchLabels:
-      'descheduler.kubernetes.io/pod-selector': 'true'
+      'vm.kubevirt.io/template.namespace': 'vm'
