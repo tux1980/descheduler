@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/tux1980/descheduler
+    repoURL: https://github.com/tux1980/descheduler.git
     targetRevision: HEAD
     path: manifests/base
   syncPolicy:
