@@ -5,10 +5,6 @@ metadata:
 spec:
   strategies:
     - name: DevKubeVirtRelieveAndMigrate
-      params:
-        nodeTaints:
-          - key: 'kubernetes.io/hostname'
-            operator: Exists
   # This part targets pods of virtual machines.
   # You may need to adjust the label selector based on your environment.
   nodeSelector:
