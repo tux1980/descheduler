@@ -4,7 +4,7 @@ metadata:
   name: virtualization-descheduler-profile
 spec:
   strategies:
-    - name: RemovePodsViolatingNodeTaints
+    - name: DevKubeVirtRelieveAndMigrate
       params:
         nodeTaints:
           - key: 'kubernetes.io/hostname'
