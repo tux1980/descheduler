@@ -14,5 +14,5 @@ spec:
   - EvictPodsWithPVC
   - EvictPodsWithLocalStorage
   profileCustomizations:
-    devDeviationThresholds: Medium
-    devActualUtilizationProfile: PrometheusCPUPSIPressure
+    devDeviationThresholds: AsymmetricLow
+    devActualUtilizationProfile: PrometheusCPUCombined
