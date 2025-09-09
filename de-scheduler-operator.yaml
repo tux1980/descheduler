@@ -4,9 +4,15 @@ metadata:
   name: cluster
   namespace: openshift-kube-descheduler-operator
 spec:
-  deschedulingIntervalSeconds: 3600
+  mode: Automatic
+  managementState: Managed
+  deschedulingIntervalSeconds: 30
+  evictionLimits:
+    total: 20
   profiles:
-  - LongLifecycle 
-  mode: Predictive 
+  - DevKubeVirtRelieveAndMigrate
+  - EvictPodsWithPVC
+  - EvictPodsWithLocalStorage
   profileCustomizations:
-    devEnableEvictionsInBackground: true 
+    devDeviationThresholds: Medium
+    devActualUtilizationProfile: PrometheusCPUPSIPressure
