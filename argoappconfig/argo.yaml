@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/tux1980/descheduler.git
-    targetRevision: HEAD
+    targetRevision: LongLifecycle
     path: operator/
   syncPolicy:
     automated:
