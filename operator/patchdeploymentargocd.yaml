@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-repo-server
+  name: openshift-gitops-repo-server
   namespace: openshift-gitops  
 spec:
   template:
