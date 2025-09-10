@@ -3,8 +3,6 @@ kind: Subscription
 metadata:
   name: cluster-kube-descheduler-operator
   namespace: openshift-kube-descheduler-operator
-  labels:
-    operators.coreos.com/cluster-kube-descheduler-operator.openshift-kube-descheduler-op: ''
 spec:
   channel: stable
   installPlanApproval: Automatic
