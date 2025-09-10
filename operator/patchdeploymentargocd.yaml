@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argocd-repo-server
+  namespace: openshift-gitops  
+spec:
+  template:
+    spec:
+      volumes:
+      - name: custom-tools
+        configMap:
+          name: cmp-add-evict-annotation
+      initContainers:
+      - name: install-python-yaml
+        image: python:3.9-alpine
+        command: ["sh", "-c", "pip install PyYAML && cp -r /usr/local/lib/python3.9/site-packages/. /custom-tools"]
+        volumeMounts:
+        - name: custom-tools
+          mountPath: /custom-tools
+      containers:
+      - name: repo-server
+        volumeMounts:
+        - name: custom-tools
+          mountPath: /custom-tools
