@@ -6,6 +6,6 @@ metadata:
 spec:
   channel: stable
   installPlanApproval: Automatic
-  name: descheduler-operator
+  name: cluster-kube-descheduler-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
