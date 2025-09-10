@@ -18,7 +18,7 @@ spec:
         - name: custom-tools
           mountPath: /custom-tools
       containers:
-      - name: openshift-gitops-repo-server
+      - name: repo-server
         volumeMounts:
         - name: custom-tools
           mountPath: /custom-tools
