@@ -17,7 +17,7 @@ data:
             if manifest and manifest.get('kind') == 'VirtualMachine':
                 template_metadata = manifest.get('spec', {}).get('template', {}).get('metadata', {})
                 labels = template_metadata.get('labels', {})
-                if labels.get('linux') == 'yes':
+                if labels.get('descheduler') == 'LongLifecycle':
                     annotations = template_metadata.get('annotations', {})
                     if 'descheduler.alpha.kubernetes.io/evict' not in annotations:
                         annotations['descheduler.alpha.kubernetes.io/evict'] = 'true'
