@@ -5,6 +5,4 @@ resources:
 - operatorgroup.yaml
 - subscription.yaml
 - de-scheduler-operator.yaml
-- configargocdplugin.yaml
-- patchdeploymentargocd.yaml
 
