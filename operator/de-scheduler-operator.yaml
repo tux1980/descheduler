@@ -10,9 +10,7 @@ spec:
   evictionLimits:
     total: 20
   profiles:
-  - DevKubeVirtRelieveAndMigrate
-  - EvictPodsWithPVC
-  - EvictPodsWithLocalStorage
+  - LongLifecycle
+  mode: Automatic
   profileCustomizations:
-    devDeviationThresholds: AsymmetricLow
-    devActualUtilizationProfile: PrometheusCPUCombined
+    devEnableEvictionsInBackground: true
