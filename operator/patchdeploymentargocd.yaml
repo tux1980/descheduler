@@ -19,6 +19,7 @@ spec:
           mountPath: /custom-tools
       containers:
       - name: repo-server
+        image: registry.redhat.io/openshift-gitops-1/argocd-rhel8@sha256:5c9ea426cd60e7b8d1d8e4fe763909200612434c65596855334054e26cbfe3d0
         volumeMounts:
         - name: custom-tools
           mountPath: /custom-tools
