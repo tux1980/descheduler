@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/tux1980/descheduler.git
-    targetRevision: HEAD
+    targetRevision: DevKubeVirt
     path: operator/
   syncPolicy:
     automated:
