@@ -4,7 +4,6 @@ metadata:
   name: descheduler-app
   namespace: openshift-gitops
   annotations:
-    argocd.argoproj.io/default-tools: ""
 spec:
   destination:
     namespace: openshift-operators
