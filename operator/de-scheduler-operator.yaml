@@ -11,8 +11,6 @@ spec:
     total: 20
   profiles:
   - DevKubeVirtRelieveAndMigrate
-  - EvictPodsWithPVC
-  - EvictPodsWithLocalStorage
   profileCustomizations:
     devDeviationThresholds: AsymmetricLow
     devActualUtilizationProfile: PrometheusCPUCombined
