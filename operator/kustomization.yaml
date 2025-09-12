@@ -5,5 +5,3 @@ resources:
 - operatorgroup.yaml
 - subscription.yaml
 - de-scheduler-operator.yaml
-- profilevm.yaml
-
