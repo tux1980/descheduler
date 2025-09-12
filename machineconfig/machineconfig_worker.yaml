@@ -3,7 +3,8 @@ kind: MachineConfig
 metadata:
   labels:
     machineconfiguration.openshift.io/role: worker
-  name: 00-openshift-machineconfig-worker-psi
+  name: 99-openshift-machineconfig-worker-psi
 spec:
   kernelArguments:
     - psi=1
+    - systemd.unified_cgroup_hierarchy=1
